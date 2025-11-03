@@ -61,6 +61,7 @@ tooltip label {
 #pulseaudio,
 #network,
 #bluetooth,
+#custom-bluetooth,
 #cpu,
 #memory,
 #custom-gpu {
@@ -74,6 +75,7 @@ tooltip label {
 #clock:hover,
 #pulseaudio:hover,
 #network:hover,
+#custom-bluetooth:hover,
 #bluetooth:hover {
     background-color: @primary_container;
     color: @on_primary_container;
