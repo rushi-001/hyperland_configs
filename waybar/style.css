@@ -1,0 +1,80 @@
+@import "colors.css";
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "SF Pro Display", Helvetica, Arial, sans-serif;
+    font-size: 1rem;
+    min-height: 0;
+}
+
+window#waybar {
+    background: @background;
+    color: @on_surface;
+}
+
+tooltip {
+    background: @background;
+    border: 1px solid rgba(100, 114, 125, 0.5);
+}
+
+tooltip label {
+    color: @on_surface;
+}
+
+/* Workspaces dots */
+#workspaces button {
+    padding: 4px 10px;
+    margin: 2px;
+    border-radius: 9px;
+    background-color: @primary;
+    color: @on_primary;
+    transition: all 0.2s ease;
+}
+
+#workspaces button.active {
+    background-color: @primary_container;
+    color: @on_primary_container;
+}
+
+#workspaces button:hover {
+    background-color: @primary_container;
+    color: @on_primary_container;
+}
+
+/* Title Window CSS */
+#custom-window_icon {
+    padding: 1px 15px 1px 10px;
+    margin: 1px 10px 1px 1px;
+    border-radius: 9px;
+    background-color: @primary;
+    color: @on_primary;
+    font-size: 1.5rem;
+}
+
+#custom-window_icon:hover {
+    background-color: @primary_container;
+    color: @on_primary_container;
+}
+
+#clock,
+#pulseaudio,
+#network,
+#bluetooth,
+#cpu,
+#memory,
+#custom-gpu {
+    padding: 4px 10px;
+    margin: 2px;
+    background-color: @primary;
+    color: @on_primary;
+    border-radius: 9px;
+}
+
+#clock:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover {
+    background-color: @primary_container;
+    color: @on_primary_container;
+}
